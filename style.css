@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    padding-top: 33px;
+}
+
+.heading h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 21, 207);
+}
+.heading{
+    padding: 17px 0px;
+}
+
+.qr_wraper{
+    background: linear-gradient(150deg , rgb(237, 44, 255) ,rgb(255, 255, 0));
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrcodeimg_wraper{
+    background-color: white;
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.qr_text_wraper{
+    background: linear-gradient(150deg , rgb(237, 44, 255) ,rgb(255, 255, 0));
+    width: 300px;
+    margin-top: 33px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#qrcode_text{
+    width: 95%;
+    height: 70%;
+    border: 0;
+    border-radius: 7px;
+    font-size: 28px;
+    color: dodgerblue;
+    padding: 0px 8px;
+    outline: none;
+}
+#qrcode{
+    width: 90%;
+    height: 90%;
+}
+.qrcodebtn_wraper{
+    background: linear-gradient(150deg , rgb(44, 135, 255) ,rgb(247, 119, 69));
+    width: 300px;
+    margin-top: 10px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 200ms;
+
+}
+
+#qrbtn{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    font-size: 23px;
+    color: white;
+}
+.qrcodebtn_wraper:hover{
+    transform: scale(1.01);
+}
+
+@media (max-width : 370px) {
+      .heading h1{
+          text-align: center;
+      }  
+      .heading{
+          width: 90%;
+      }
+      .qr_wraper{
+          width: 90%;
+          height: 270px;
+      }
+      .qr_text_wraper{
+          width: 90%;
+      }
+      .qrcodebtn_wraper{
+          width: 90%;
+      }
+}

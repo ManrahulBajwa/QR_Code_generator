@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>QR Code Generator</h1>
+        </div>
+        <div class="qr_wraper">
+            <div class="qrcodeimg_wraper">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?&data=Example" id="qrcode"></img>
+            </div>
+        </div>
+
+        <div class="qr_text_wraper">
+            <input type="text" id="qrcode_text">
+        </div>
+        <div class="qrcodebtn_wraper">
+            <button id="qrbtn">Generate</button>
+        </div>
+
+
+
+    </div>
+
+    <script src="Javascript.js"></script>
+</body>
+
+</html>
